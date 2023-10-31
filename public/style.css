@@ -1,0 +1,131 @@
+body{
+    background: #2a2b38;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+
+    height: 100vh; /* Isso faz com que o corpo da página ocupe toda a altura da tela */
+    margin: 0; /* Remova a margem padrão para ocupar toda a largura */
+}
+
+.card {
+    width: 300px;
+    padding: 1.9rem 1.2rem;
+    text-align: center;
+    background: #2a2b38;
+   }
+   
+   /*Inputs*/
+   .field {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    background-color: #1f2029;
+    border-radius: 4px;
+    padding: 1em 1em;
+   }
+   
+   .input-icon {
+    height: 1em;
+    width: 1em;
+    fill: #ffeba7;
+   }
+   /* Select */
+.field select {
+    background: none;
+    border: none;
+    outline: none;
+    width: 100%;
+    color: #d3d3d3;
+    cursor: pointer;
+    font-size: 1em; /* Tamanho da fonte ajustável conforme necessário */
+    border-radius: 4px;
+    background-color: #1f2029;
+}
+label{
+    color: #ffeba7;
+}
+.field select + svg {
+    height: 1em;
+    width: 1em;
+    fill: #ffeba7;
+}
+
+/* Estilo para quando o select está focado */
+.field select:focus {
+    box-shadow: 0 0 0 2px #ffeba7;
+}
+
+   
+   .input-field {
+    background: none;
+    border: none;
+    outline: none;
+    width: 100%;
+    color: #d3d3d3;
+   }
+   
+   /*Text*/
+   .title {
+    margin-bottom: 1.5rem;
+    font-size: 1.5em;
+    font-weight: 500;
+    color: #f5f5f5;
+   }
+   
+   /*Buttons*/
+   .btn {
+    margin: 1rem 0;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: .8em;
+    text-transform: uppercase;
+    padding: 0.6em 1.2em;
+    background-color: #ffeba7;
+    color: #5e6681;
+    box-shadow: 0 8px 24px 0 rgb(255 235 167 / 20%);
+    transition: all .3s ease-in-out;
+   }
+   
+   .btn-link {
+    color: #f5f5f5;
+    display: block;
+    font-size: .75em;
+    transition: color .3s ease-out;
+   }
+   
+   /*Hover & focus*/
+   .field input:focus::placeholder {
+    opacity: 0;
+    transition: opacity .3s;
+   }
+   
+   .btn:hover {
+    background-color: #5e6681;
+    color: #ffeba7;
+    box-shadow: 0 8px 24px 0 rgb(16 39 112 / 20%);
+   }
+   
+   .btn-link:hover {
+    color: #ffeba7;
+   }
+   
+
+   /*css para create post page*/
+.post_container textarea{
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1.5px solid #ffeba7;
+    background: none;
+    border-radius: 4px;
+    resize: vertical;
+    font-size: 16px;
+    outline: none;
+    color: #fff;
+}
