@@ -1,6 +1,6 @@
 # Projeto Nos Escola 🏫
 
-Bem-vindo ao projeto **Nos Escola**! Este projeto é uma aplicação web construída com Node.js, Express, SQLite e bcrypt. Ele permite que usuários realizem o cadastro, façam login, visualizem seus dados e publiquem novos posts.
+Bem-vindo ao projeto **Nos Escola**! Este projeto é uma aplicação web construída com Node.js, Express, SQLite e bcrypt. Ele permite que usuários realizem postagens sobre o dia ou sobre assuntos escolares.
 
 ## Índice 📜
 - [Configuração](#configuração)
