@@ -23,13 +23,13 @@ Antes de começar, certifique-se de ter o Node.js e o npm instalados em sua máq
 ```bash
 npm install
 ```
+Isso instalará todas as dependências necessárias.
 
 rode o servidor
 ```bash
 npm run server
 ```
 
-Isso instalará todas as dependências necessárias.
 
 ## Instalação 🚀
 
