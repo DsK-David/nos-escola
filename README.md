@@ -12,7 +12,7 @@ Bem-vindo ao projeto **Nos Escola**! Este projeto é uma aplicação web constru
   - [Página Principal](#página-principal)
   - [Novos Posts](#novos-posts)
   - [Dados do Usuário](#dados-do-usuário)
-- [Banco de Dados](#Banco-de-Dados)
+- [Banco de Dados](#banco-de-dados)
 - [Contribuição](#contribuição)
 - [autor](#autor)
 
