@@ -8,9 +8,22 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div id="loader" style="display: none;" class="loader">
+  
+        <div class="dot-spinner">
+          <div class="dot-spinner__dot"></div>
+          <div class="dot-spinner__dot"></div>
+          <div class="dot-spinner__dot"></div>
+          <div class="dot-spinner__dot"></div>
+          <div class="dot-spinner__dot"></div>
+          <div class="dot-spinner__dot"></div>
+          <div class="dot-spinner__dot"></div>
+          <div class="dot-spinner__dot"></div>
+        </div>
+            </div>
     <div class="card">
         <h4 class="title">Cadastro</h4>
-        <form action="/new/user" method="post">
+        <form action="/new/user" method="post" id="form">
             <div class="field">
                 <svg class="input-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-2.21 0-4-1.79-4-4s1.79-4 4-4s4 1.79 4 4s-1.79 4-4 4zm0-9c-2.21 0-4 1.79-4 4s1.79 4 4 4s4-1.79 4-4s-1.79-4-4-4zm0 7c-1.65 0-3-1.35-3-3s1.35-3 3-3s3 1.35 3 3s-1.35 3-3 3z"/>
@@ -115,5 +128,36 @@
 
             return true;
         }
+        document.addEventListener("DOMContentLoaded", function () {
+        var form = document.getElementById("form");
+        var loader = document.getElementById("loader");
+        var submitBtn = document.getElementById("btn");
+
+        form.addEventListener("submit", function (event) {
+           
+
+            // Mostrar o loader
+            loader.style.display = "block";
+
+            // Desativar o botão de envio durante o processamento
+            submitBtn.disabled = true;
+
+            // Aqui você pode adicionar lógica para enviar o formulário para o servidor
+            // ...
+
+            // Simulando um atraso (substitua isso pela sua lógica de envio real)
+            setTimeout(function () {
+                // Esconder o loader
+                loader.style.display = "none";
+
+                // Ativar o botão de envio após o processamento
+                submitBtn.disabled = false;
+
+               
+               
+            }, 3000); 
+        });
+    });
+
 </script>
 </html>
